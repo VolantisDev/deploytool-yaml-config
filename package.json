@@ -1,0 +1,38 @@
+{
+  "name": "deploytool-yaml-config",
+  "version": "0.1.0",
+  "description": "Load deploytool environments from a .yml file",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmcclure/deploytool-yaml-config"
+  },
+  "author": {
+    "name": "Ben McClure",
+    "email": "ben.mcclure@gmail.com",
+    "url": "http://benmcclure.com"
+  },
+  "files": [
+    "index.js"
+  ],
+  "extensions": {
+    "deploytool:config": {
+      "git-push": "./"
+    }
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "dependencies": {
+    "deploytool": "^0.2.2",
+    "node-yaml-config": "0.0.4",
+    "object-assign": "^4.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  }
+}
